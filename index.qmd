@@ -1,0 +1,37 @@
+---
+title: "Hands_on_Shinylive"
+description:  "A hands-on step by step tutorial to create Shinylive instead of Shinyapps"
+author: "RPythonStudyGroup feat. ChatGPT"
+date: "2024-11-18"
+date-modified: "2024-11-18"
+categories:
+  - API
+  - Shinylive
+  - hands-on
+---
+
+::: {.callout-note title="배경" collapse="true" appearance="minimal"}
+-   웹페이지에 shinyapps 패키지 기능을 publish하기 위해서는 host server가 shiny 패키지를 지원 가능한 동적인 웹페이지여야 한다. 하지만 github에서는 정적인 웹페이지만 지원하므로 이를 지원하지 않는다.
+
+-   대안으로 shinyapps 구현 페이지부분만 shinyapps.io에 publish하는 것이다. 하지만 이는 사용상의 제한이 있다.
+
+-   최근에서 web assembly 기술을 이용하여 정적홈페이지에서도 shinyapps를 사용할 수 있는 shinylive 패키지가 등장하였다.
+
+-   이 hands-on에서는 shinylive extension을 이용하여 Quarto Website Project에서 shinyapps를 구현하는 과정이 진행됩니다.
+:::
+
+::: {.callout-note title="1단계: `Quarto Website` 프로젝트 만들기" collapse="true" appearance="minimal"}
+-   RStudio/File 메뉴에서 `New Project...` 메뉴 선택
+-   `New Directory`에 생성되도록 선택
+-   Project type은 `Quarto Website`를 선택
+-   상위폴더가 `C:/Projects`인지 확인 (=Global Options 사전 지정값)
+-   Directory name은 `R-4.4.1-Quarto_Website_Example`로 지정
+- [x] Create a git repository: 체크 유지하여 버전관리 적용
+- [x] Use renv with this project: 체크 유지하여 패키지 독립관리 적용
+- [x] Use visual markdown editor: 체크 유지하여 wizwig 에디터 사용
+- [ ] Open in new session: 기존 프로젝트가 이미 열려있고, 같이 사용할려면 체크
+:::
+```{r project_name, eval=FALSE, filename="recommeded project name"}
+R-4.4.1-Hands_on_Shinylive
+```
+
